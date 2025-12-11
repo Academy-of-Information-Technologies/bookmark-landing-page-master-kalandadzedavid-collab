@@ -5,130 +5,337 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./src/output.css">
   <title>Frontend Mentor | Bookmark landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header class="flex justify-between items-center px-[32px] pt-[40px] pb-[85px]">
+    <img src="./images/logo-bookmark.svg" alt="">
+    <nav class="group">
+      <img src="./images/icon-hamburger.svg" alt="">
+      <div class="hidden group-hover:block w-full bg-slate-800 backdrop-blur-lg opacity-95 px-[32px] pt-[40px] absolute top-0 left-0">
+        <div class="mb-[40px] flex justify-between items-center">
+          <img src="./images/logo-white.svg" alt="">
+          <img  src="./images/icon-close.svg" alt="">
+        </div>
+        <ul class="text-center mb-[219px]">
+          <li class="// features
+text-white
+text-xl
+font-normal
+font-['Rubik']
+uppercase
+leading-4
+tracking-widest py-[24.5px] border-t-[1px] border-t-[rgba(255,255,255,0.2)]">features</li>
+           <li class="// features
+text-white
+text-xl
+font-normal
+font-['Rubik']
+uppercase
+leading-4
+tracking-widest py-[24.5px] border-t-[1px] border-t-[rgba(255,255,255,0.2)]">PRICING</li>
+       
+<li class="// features
+text-white
+text-xl
+font-normal
+font-['Rubik']
+uppercase
+leading-4
+tracking-widest py-[24.5px] border-b-[1px] border-t-[1px] border-b-[rgba(255,255,255,0.2)]  border-t-[rgba(255,255,255,0.2)]">CONTACT</li>
 
-  Features
-  Pricing
-  Contact
-  Login
+<button class="// LOGIN
+text-white
+text-xl
+font-medium
+font-['Rubik']
+leading-4
+tracking-widest rounded-[5px] shadow-[0px_8px_8px_-2px_rgba(73,93,207,0.20)] w-full py-[15.5px] mt-[24px] border-2 border-white ">LOGIN</button>
+</ul>
+<div class="flex justify-center gap-[30px] mb-[48px]">
+  <img src="./images/icon-facebook.svg" alt="">
+  <img src="./images/icon-twitter.svg" alt="">
+</div>
+      </div>
+    </nav>
+  </header>
 
-  A Simple Bookmark Manager
+  <main>
+    <section class="px-[32px] mb-[140px]">
+      <div class="relative flex justify-center mb-[96px] ">
+        <img class="relative z-10" src="./images/illustration-hero.svg" alt="">
+        <img class="absolute bottom-[-10px] right-[-32px]" src="./images/Rectangle.svg" alt="">
+      </div>
 
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
+      <div class="text-center">
+        <h1 class="// A Simple Bookmark Manager
+text-slate-800
+text-3xl
+font-medium
+font-['Rubik']
+leading-10">A Simple Bookmark Manager</h1>
+        <p class="// A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-6 opacity-50 mt-[16px] mb-[32px]">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+      </div>
 
-  Get it on Chrome
-  Get it on Firefox
+      <div class="flex justify-center gap-[14px]">
+        <button class="px-[16.5px] py-[10px] bg-[#5267DF] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] // Get it on Chrom
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight
+---
+// e
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7">Get it on Chrome</button>
 
-  Features
+<button class="px-[16.5px] py-[10px] bg-[#F7F7F7] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] // Get it on Firefox
+text-slate-800
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight">Get it on Firefox</button>
+      </div>
+    </section>
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+    <section class="px-[32px] mb-[72px]">
+      <div class="text-center mb-10">
+        <h2 class="// Features
+text-slate-800
+text-2xl
+font-medium
+font-['Rubik']
+leading-[52px]">Features</h2>
+<p class="// Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-6 opacity-50">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="border-t border-t-[#495DCF33] border-b border-b-[#495DCF33]">
+        <div class="text-center border-b border-b-[#495DCF33]">
+          <p class="// Simple Bookmarking
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-4
+tracking-wide py-[20px] hover:py-[18px] hover:border-b-[2px] hover:border-b-[#FA5959]">Simple Bookmarking</p>
+        </div>
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
+        <div class="text-center border-b border-b-[#495DCF33]">
+          <p class="// Simple Bookmarking
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-4
+tracking-wide py-[20px] hover:py-[18px] hover:border-b-[2px] hover:border-b-[#FA5959]">Speedy Searching</p>
+        </div>
 
-  Bookmark in one click
+        <div class="text-center">
+          <p class="// Simple Bookmarking
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-4
+tracking-wide py-[20px] hover:py-[18px] hover:border-b-[2px] hover:border-b-[#FA5959]">Easy Sharing</p>
+        </div>
+      </div>
+    </section>
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
+    <section class="px-[32px] mb-[77px]">
+      <div class="relative mb-[69px]">
+        <img class="relative z-10" src="./images/illustration-features-tab-1.svg" alt="">
+        <img class="absolute left-[-32px] bottom-[-37px]" src="./images/rectangle-2.svg" alt="">
+      </div>
+      <div class="text-center">
+        <h3 class="// Bookmark in one click
+text-slate-800
+text-2xl
+font-medium
+font-['Rubik']
+leading-[52px]">Bookmark in one click</h3>
+        <p class="// Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-6 opacity-50 mb-[15px]">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+<button class="bg-[#5267DF] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] py-[10px] px-[24.5px] // More Info
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight">More Info</button>
+      </div>
+    </section>
 
-  More Info
+    <section class="px-[32px] mb-[140px]">
+      <div class="text-center mb-10">
+        <h4 class="// Download the extension
+text-slate-800
+text-2xl
+font-medium
+font-['Rubik']
+leading-[52px]">Download the extension</h4>
+<p class="// We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-6 opacity-50">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+      </div>
 
-  Intelligent search
+      <div class="flex flex-col gap-10">
+        <div class="flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
+          <img class="mb-[32px]" src="./images/logo-chrome.svg" alt="">
+          <div class="mb-[60px] text-center">
+            <h5 class="// Add to Chrome
+text-slate-800
+text-xl
+font-medium
+font-['Rubik']
+tracking-tight">Add to Chrome</h5>
+            <p class="mt-[6px] // Minimum version 62
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-7 opacity-50">Minimum version 62</p>
+          </div>
+          <button class="rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] py-[10px] px-[35px] bg-[#5267DF] // Add & Install Extension
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight">Add & Install Extension</button>
+        </div>
 
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
+        <div class="flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
+          <img class="mb-[32px]" src="./images/logo-firefox.svg" alt="">
+          <div class="mb-[60px] text-center">
+            <h5 class="// Add to Chrome
+text-slate-800
+text-xl
+font-medium
+font-['Rubik']
+tracking-tight">Add to Firefox</h5>
+            <p class="mt-[6px] // Minimum version 62
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-7 opacity-50">Minimum version 55</p>
+          </div>
+          <button class="rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] py-[10px] px-[35px] bg-[#5267DF] // Add & Install Extension
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight">Add & Install Extension</button>
+        </div>
 
-  More Info
+         <div class="flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
+          <img class="mb-[32px]" src="./images/logo-opera.svg" alt="">
+          <div class="mb-[60px] text-center">
+            <h5 class="// Add to Chrome
+text-slate-800
+text-xl
+font-medium
+font-['Rubik']
+tracking-tight">Add to Opera</h5>
+            <p class="mt-[6px] // Minimum version 62
+text-slate-800
+text-base
+font-normal
+font-['Rubik']
+leading-7 opacity-50">Minimum version 46</p>
+          </div>
+          <button class="rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] py-[10px] px-[35px] bg-[#5267DF] // Add & Install Extension
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight">Add & Install Extension</button>
+        </div>
 
-  Share your bookmarks
 
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
+      </div>
+    </section>
 
-  More Info
+    <section class="bg-indigo-500 px-[32px] py-[60px]">
+      <div class="text-center mb-[32px]">
+        <p class="// 35,000+ ALREADY JOINED
+text-white
+text-xs
+font-medium
+font-['Rubik']
+leading-10
+tracking-[4.62px]">35,000+ ALREADY JOINED</p>
+<h6 class="// Stay up-to-date with what<br/>we’re doing
+text-white
+text-2xl
+font-medium
+font-['Rubik']
+leading-7">Stay up-to-date with what
+we’re doing</h6>
+      </div>
 
-  Download the extension
+      <form class="flex flex-col items-center gap-[16px]">
+        <label for="email"><input class="py-[10px] w-[311px] pl-[16px] bg-white rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] // Enter your email address
+text-slate-800/25
+text-sm
+font-normal
+font-['Rubik']
+leading-7
+tracking-tight" type="email" placeholder="Enter your email address"></label>
 
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
+<input class="py-[10px] px-[115.5px] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] bg-rose-500 // Contact Us
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight w-[311px]" type="submit" value="Contact Us">
+      </form>
+    </section>
+  </main>
 
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
-
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <footer class="py-[41.5px] bg-[#242A45] flex flex-col items-center">
+    <img class="mb-10" src="./images/logo-white.svg" alt="">
+    <div class="// FEATURES
+text-white
+text-base
+font-normal
+font-['Rubik']
+leading-4
+tracking-widest flex flex-col items-center gap-[32px] mb-[48px]">
+      <p>FEATURES</p>
+      <p>PRICING</p>
+      <p>CONTACT</p>
+    </div>
+    <div class="flex justify-center gap-[30px]">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-twitter.svg" alt="">
+    </div>
   </footer>
 </body>
 </html>
