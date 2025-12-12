@@ -9,11 +9,11 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body>
-  <header class="flex justify-between items-center px-[32px] pt-[40px] pb-[85px]">
+  <header class="flex justify-between items-center px-[32px] pt-[40px] pb-[85px] md:pt-[48px] md:pl-[171px] md:pr-[165px] md:pb-[108px]">
     <img src="./images/logo-bookmark.svg" alt="">
-    <nav class="group">
+    <nav class="md:hidden group">
       <img src="./images/icon-hamburger.svg" alt="">
-      <div class="hidden group-hover:block w-full bg-slate-800 backdrop-blur-lg opacity-95 px-[32px] pt-[40px] absolute top-0 left-0">
+      <div class="hidden group-hover:block w-full bg-slate-800 backdrop-blur-lg opacity-95 px-[32px] pt-[40px] absolute top-0 left-0 z-20">
         <div class="mb-[40px] flex justify-between items-center">
           <img src="./images/logo-white.svg" alt="">
           <img  src="./images/icon-close.svg" alt="">
@@ -59,31 +59,70 @@ tracking-widest rounded-[5px] shadow-[0px_8px_8px_-2px_rgba(73,93,207,0.20)] w-f
 </div>
       </div>
     </nav>
+    <nav class="hidden md:block">
+      <ul class="flex items-center gap-[44px] // FEATURES
+text-slate-800
+text-xs
+font-normal
+font-['Rubik']
+leading-4
+tracking-wider">
+        <li>FEATURES</li>
+        <li>FEATURES</li>
+        <li>FEATURES</li>
+        <button class="py-[11.5px] px-[33px] bg-rose-500 rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] text-white">LOGIN</button>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="px-[32px] mb-[140px]">
+    <section class="md:mb-[80px] md:pl-[165px] md:pr-[93px] md:items-center px-[32px] mb-[140px] md:flex md:flex-row-reverse">
       <div class="relative flex justify-center mb-[96px] ">
-        <img class="relative z-10" src="./images/illustration-hero.svg" alt="">
-        <img class="absolute bottom-[-10px] right-[-32px]" src="./images/Rectangle.svg" alt="">
+        <img class="md:max-w-[574px] relative z-10" src="./images/illustration-hero.svg" alt="">
+        <img class="md:right-[-93px] md:w-[500px] absolute bottom-[-10px] right-[-32px]" src="./images/Rectangle.svg" alt="">
       </div>
 
-      <div class="text-center">
+      <div class="text-center md:text-start md:flex md:flex-col md:items-start">
         <h1 class="// A Simple Bookmark Manager
 text-slate-800
 text-3xl
 font-medium
 font-['Rubik']
-leading-10">A Simple Bookmark Manager</h1>
+leading-10 md:text-5xl">A Simple Bookmark Manager</h1>
         <p class="// A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
 text-slate-800
 text-base
 font-normal
 font-['Rubik']
-leading-6 opacity-50 mt-[16px] mb-[32px]">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+leading-6 opacity-50 mt-[16px] mb-[32px] md:text-lg md:pr-[67px]">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+
+<div class="hidden md:flex justify-center gap-[14px]">
+        <button class="px-[16.5px] py-[10px] bg-[#5267DF] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] // Get it on Chrom
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight
+---
+// e
+text-white
+text-sm
+font-medium
+font-['Rubik']
+leading-7">Get it on Chrome</button>
+
+<button class="px-[16.5px] py-[10px] bg-[#F7F7F7] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] // Get it on Firefox
+text-slate-800
+text-sm
+font-medium
+font-['Rubik']
+leading-7
+tracking-tight">Get it on Firefox</button>
+      </div>
       </div>
 
-      <div class="flex justify-center gap-[14px]">
+      <div class="md:hidden flex justify-center gap-[14px]">
         <button class="px-[16.5px] py-[10px] bg-[#5267DF] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] // Get it on Chrom
 text-white
 text-sm
@@ -109,23 +148,23 @@ tracking-tight">Get it on Firefox</button>
       </div>
     </section>
 
-    <section class="px-[32px] mb-[72px]">
-      <div class="text-center mb-10">
+    <section class="px-[32px] mb-[72px] md:flex md:flex-col md:items-center">
+      <div class="md:mb-[72px] text-center mb-10 md:flex md:flex-col md:items-center">
         <h2 class="// Features
 text-slate-800
 text-2xl
 font-medium
 font-['Rubik']
-leading-[52px]">Features</h2>
+leading-[52px] md:text-3xl">Features</h2>
 <p class="// Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
 text-slate-800
 text-base
 font-normal
 font-['Rubik']
-leading-6 opacity-50">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+leading-6 opacity-50 md:text-lg md:max-w-[540px]">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
       </div>
-      <div class="border-t border-t-[#495DCF33] border-b border-b-[#495DCF33]">
-        <div class="text-center border-b border-b-[#495DCF33]">
+      <div class="md:border-t-0 md:max-w-[730px] md:flex-row md:flex md:justify-center md:gap-[90px] border-t border-t-[#495DCF33] border-b border-b-[#495DCF33]">
+        <div class="md:border-0 text-center border-b border-b-[#495DCF33]">
           <p class="// Simple Bookmarking
 text-slate-800
 text-base
@@ -135,7 +174,7 @@ leading-4
 tracking-wide py-[20px] hover:py-[18px] hover:border-b-[2px] hover:border-b-[#FA5959]">Simple Bookmarking</p>
         </div>
 
-        <div class="text-center border-b border-b-[#495DCF33]">
+        <div class="md:border-0 text-center border-b border-b-[#495DCF33]">
           <p class="// Simple Bookmarking
 text-slate-800
 text-base
@@ -155,26 +194,27 @@ leading-4
 tracking-wide py-[20px] hover:py-[18px] hover:border-b-[2px] hover:border-b-[#FA5959]">Easy Sharing</p>
         </div>
       </div>
+
     </section>
 
-    <section class="px-[32px] mb-[77px]">
+    <section class="md:mb-[238px] md:justify-between md:flex md:items-center md:px-[165px] px-[32px] mb-[77px]">
       <div class="relative mb-[69px]">
-        <img class="relative z-10" src="./images/illustration-features-tab-1.svg" alt="">
-        <img class="absolute left-[-32px] bottom-[-37px]" src="./images/rectangle-2.svg" alt="">
+        <img class="md:w-[536px] relative z-10" src="./images/illustration-features-tab-1.svg" alt="">
+        <img class="absolute md:left-[-165px] md:w-[500px] left-[-32px] bottom-[-37px]" src="./images/rectangle-2.svg" alt="">
       </div>
-      <div class="text-center">
+      <div class="md:text-start text-center md:max-w-[445px]">
         <h3 class="// Bookmark in one click
 text-slate-800
 text-2xl
 font-medium
 font-['Rubik']
-leading-[52px]">Bookmark in one click</h3>
+leading-[52px] md:text-3xl">Bookmark in one click</h3>
         <p class="// Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
 text-slate-800
 text-base
 font-normal
 font-['Rubik']
-leading-6 opacity-50 mb-[15px]">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+leading-6 opacity-50 mb-[15px] md:text-lg md:mt-[16px] md:mb-[32px]">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
 <button class="bg-[#5267DF] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] py-[10px] px-[24.5px] // More Info
 text-white
 text-sm
@@ -186,23 +226,23 @@ tracking-tight">More Info</button>
     </section>
 
     <section class="px-[32px] mb-[140px]">
-      <div class="text-center mb-10">
+      <div class="md:flex md:flex-col md:items-center text-center mb-10">
         <h4 class="// Download the extension
 text-slate-800
 text-2xl
 font-medium
 font-['Rubik']
-leading-[52px]">Download the extension</h4>
+leading-[52px] md:text-3xl">Download the extension</h4>
 <p class="// We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
 text-slate-800
 text-base
 font-normal
 font-['Rubik']
-leading-6 opacity-50">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+leading-6 opacity-50 md:text-lg md:max-w-[540px]">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
       </div>
 
-      <div class="flex flex-col gap-10">
-        <div class="flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
+      <div class="md:justify-center md:h-[451px] md:flex-row flex flex-col gap-10">
+        <div class="md:self-start md:h-[371px] flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
           <img class="mb-[32px]" src="./images/logo-chrome.svg" alt="">
           <div class="mb-[60px] text-center">
             <h5 class="// Add to Chrome
@@ -227,7 +267,7 @@ leading-7
 tracking-tight">Add & Install Extension</button>
         </div>
 
-        <div class="flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
+        <div class="md:self-center md:h-[371px] flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
           <img class="mb-[32px]" src="./images/logo-firefox.svg" alt="">
           <div class="mb-[60px] text-center">
             <h5 class="// Add to Chrome
@@ -252,7 +292,7 @@ leading-7
 tracking-tight">Add & Install Extension</button>
         </div>
 
-         <div class="flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
+         <div class="md:self-end md:h-[371px] flex flex-col items-center rounded-2xl shadow-[0px_10px_20px_-5px_rgba(73,93,207,0.20)] pt-[49px] px-[30px] pb-[24px]"> 
           <img class="mb-[32px]" src="./images/logo-opera.svg" alt="">
           <div class="mb-[60px] text-center">
             <h5 class="// Add to Chrome
@@ -281,7 +321,7 @@ tracking-tight">Add & Install Extension</button>
       </div>
     </section>
 
-    <section class="bg-indigo-500 px-[32px] py-[60px]">
+    <section class="md:flex md:flex-col md:items-center bg-indigo-500 px-[32px] py-[60px]">
       <div class="text-center mb-[32px]">
         <p class="// 35,000+ ALREADY JOINED
 text-white
@@ -299,7 +339,7 @@ leading-7">Stay up-to-date with what
 we’re doing</h6>
       </div>
 
-      <form class="flex flex-col items-center gap-[16px]">
+      <form class="md:flex-row flex flex-col items-center gap-[16px]">
         <label for="email"><input class="py-[10px] w-[311px] pl-[16px] bg-white rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] // Enter your email address
 text-slate-800/25
 text-sm
@@ -308,7 +348,7 @@ font-['Rubik']
 leading-7
 tracking-tight" type="email" placeholder="Enter your email address"></label>
 
-<input class="py-[10px] px-[115.5px] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] bg-rose-500 // Contact Us
+<input class="md:px-[24px] md:w-[126px] py-[10px] px-[115.5px] rounded-[5px] shadow-[0px_8px_8px_-4px_rgba(73,93,207,0.20)] bg-rose-500 // Contact Us
 text-white
 text-sm
 font-medium
@@ -319,20 +359,20 @@ tracking-tight w-[311px]" type="submit" value="Contact Us">
     </section>
   </main>
 
-  <footer class="py-[41.5px] bg-[#242A45] flex flex-col items-center">
-    <img class="mb-10" src="./images/logo-white.svg" alt="">
+  <footer class="md:items-center md:flex-row md:px-[165px] py-[41.5px] bg-[#242A45] flex flex-col items-center">
+    <img class="mb-10 md:mb-[unset]" src="./images/logo-white.svg" alt="">
     <div class="// FEATURES
 text-white
 text-base
 font-normal
 font-['Rubik']
 leading-4
-tracking-widest flex flex-col items-center gap-[32px] mb-[48px]">
+tracking-widest flex flex-col items-center gap-[32px] mb-[48px] md:pl-[65px] md:flex-row md:mb-[unset]">
       <p>FEATURES</p>
       <p>PRICING</p>
       <p>CONTACT</p>
     </div>
-    <div class="flex justify-center gap-[30px]">
+    <div class="md:ml-auto flex justify-center gap-[30px]">
       <img src="./images/icon-facebook.svg" alt="">
       <img src="./images/icon-twitter.svg" alt="">
     </div>
